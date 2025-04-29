@@ -58,8 +58,10 @@ function video_id(id_obj){
         // Si coinciden se ejecuta ver video
         let index_ = jsonData.indexOf(block_)
         ver_video(index_)
-        break
+        return
     }
+
+    error_vew()
 }
 
 function escapeRegExp(string) {
@@ -202,11 +204,17 @@ function como_indexar(){
         <input type="text" placeholder="TÍTULO DEL VIDEO" id="title" minlength="3" maxlength="80" required/>
         <input type="text" placeholder="DESCRIPCIÓN DEL VIDEO" id="description" minlength="10" maxlength="5000"required/>
         <input type="text" placeholder="AUTOR DEL VIDEO" id="author" minlength="3" maxlength="15" required/>
+        <a href="https://catbox.moe/" target="blank_"><p>[ UPLOAD VIDEO HERE ]</p></a>
         <input type="text" placeholder="URL DEL VIDEO" id="video_url" minlength="10" maxlength="40" required/>
         <button onclick="generarCodigo()">INDE3X</button>
         
         <textarea id="resultado" placeholder="Aquí se generará el código..." readonly></textarea>
     </div>
+        <a href="https://t.me/h4cktub3" target="blank_"><h6>[ TELEGRAM HERE ] == [ TUT0R14L ]</h6></a>
+        <video width="350" controls>
+        <source src="https://files.catbox.moe/o1turs.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+        </video>
     </section>
     `
 
